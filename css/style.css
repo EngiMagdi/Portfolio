@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Satisfy&family=Sora:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:' Roboto Slab',serif;
+}
+body{
+    background-image: url(../img/page-bg-1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+header{
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+/* nav */
+.logo{font-family: "Satisfy","cursive";}
+nav a:hover, #contact button:hover {
+    color: white;
+     /* background-color: blueviolet; */
+    background: linear-gradient(97deg,#fa5252,#dd2476);
+}
+/* home */
+.prof-img{
+    background-image: url(../img/prof.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width:300px ;
+    
+}
+
+
+
+/* social link */
+ul .facbook a,ul .twitter  a,ul .inst  a,ul .linkedin a{
+    padding: 5px;
+    border-radius: 5px;
+     transition: all .3s;
+}
+ul .facbook a:hover,ul .twitter a:hover,ul .inst  a:hover,ul .linkedin a:hover{  color: white;}
+ul .facbook a{color: rgb(23, 115, 234);}
+ul .facbook a:hover{background-color: rgb(23, 115, 234);}
+ul .twitter  a{color: rgb(28, 156, 234);}
+ul .twitter a:hover{background-color: rgb(28, 156, 234);}
+ul .inst  a{color: rgb(225, 42, 114);}
+ul .inst  a:hover{background-color: rgb(225, 42, 114) ;}
+ul .linkedin a{color: rgb(20, 70, 121);}
+ul .linkedin a:hover{background-color: rgb(20, 70, 121);}
+
+.prof-contain{
+    position: relative;
+    z-index: 10;
+    height: 60vh;
+    backdrop-filter: blur(25px);
+    border: 3px solid #ff9dcf;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10 10 10 / 15%);
+    padding: 0 40px 0 80px;
+    overflow: hidden;
+} 
+.prof-contain button{
+    background: linear-gradient(97deg,#fa5252,#dd2476);
+    transition: all .3s;}
+   
+    /* about */
+    
+    .about-contain,.resume-contain,.works-contain,.contact-contain{
+        border: 3px solid #ff9dcf;
+        border-radius: 20px;
+        box-shadow: -15px 17px 17px rgb(10 10 10 / 15%);
+        padding: 40px 40px 40px 80px;
+    }
+    .img{
+        height: 400px;
+    }
+    .img img{
+        height: 100%;
+       
+    }
+    /* works */
+    .img-card{height: 200px;}
+    .works-child img {
+        height: 100%;
+        filter: grayscale(100%);
+        transition:filter .2s;
+        transition: scale .3s;
+       
+       }
+    
+       .works-child img:hover {
+        filter: none;
+        scale: 1.2;
+       }
+    /* contact */
+    #contact button{transition: all .2s;}
+
+   /* الناف مشتغلش لما اصغر الشاشه بيظهر الليست  */
+
+    
+@media screen and (min-width:992px){
+ 
+}
+@media screen and (min-width:768px)and (max-width:992px)  {  
+    .prof-img{
+       
+        height: 250px;
+        width:250px ;
+        
+    }
+}
+@media screen and (min-width:500px)and (max-width:768px) {
+    .prof-img{
+     
+        height: 200px;
+        width:200px ;
+        
+    }
+  }
+@media screen and (min-width:360px)and (max-width:500px){
+    .prof-img{
+     
+        height: 150px;
+        width:150px ;
+        
+    }
+} 

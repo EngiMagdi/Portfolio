@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body>
+
+    <header class="relative">
+        <!-- nav -->  
+        <nav class=" text-black fixed right-0 left-0 top-0 z-50 bg-pink-100">
+            <div class="container mx-auto  px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+    
+                    <!-- logo -->
+  
+                    <div class="  flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <a href="index.html" class="logo  text-2xl px-3 py-2 bg-white rounded-md   "> NG</a>                       
+                    </div> 
+
+    
+                    <div class=" absolute  right-0   flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="hidden  lg:block">
+      
+                            <div class="flex space-x-4 justify-center items-center">
+        
+                                <a href="index.html" class="  text-xl font-medium px-3 py-2 bg-white rounded-md  " aria-current="page"><i class="fa-solid fa-house-user me-1"></i> Home</a>
+                                <a href="#about" class=" text-xl font-medium px-3 py-2 bg-white rounded-md"><i class="fa-regular fa-user  me-2"></i>About </a>
+                                <a href="#resume" class="text-xl font-medium  px-3 py-2 bg-white rounded-md "><i class="fa-solid fa-file-lines  me-2"></i>Resum</a>
+                                <a href="#works" class=" text-xl font-medium px-3 py-2 bg-white rounded-md"><i class="fa-solid fa-briefcase  me-2"></i>Works</a>  
+                                <a href="#contact" class=" text-xl  font-medium px-3 py-2 bg-white rounded-md "><i class="fa-solid fa-address-book  me-2"></i>Contact</a>
+      
+                            </div>
+      
+                        </div>
+      
+                    </div>
+    
+  
+                    <div class="absolute inset-y-0 right-0 flex items-center justify-center lg:hidden">
+      
+                        <!-- Mobile menu button-->
+      
+                        <button id="menuebtn" type="button" class=" relative inline-flex items-center justify-center p-2 " aria-controls="mobile-menu" aria-expanded="false">
+      
+                            <span class="absolute -inset-0.5"></span>
+      
+                            <span class="sr-only">Open main menu</span> 
+      
+                            <!--
+      
+                                Icon when menu is closed.
+  
+      
+                                Menu open: "hidden", Menu closed: "block"
+      
+                            -->
+      
+                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+           
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12 " />
+            </svg>
+             <!--
+               Icon when menu is open.
+   
+               Menu open: "block", Menu closed: "hidden"
+             -->
+             <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12 " />
+              </svg>
+          
+        </button>
+        
+    </div>
+        
+    
+    
+</div>
+    
+
+<!-- Mobile menu, show/hide based on menu state. -->
+    
+
+<div class="lg:hidden  w-auto" id="mobile-menu">
+    
+
+    <div class="space-y-1 px-2 pb-3 pt-2  ">
+        <a href="index.html" class="  text-xl font-medium px-3 py-2 bg-white rounded-md block " aria-current="page"><i class="fa-solid fa-house-user me-1"></i> Home</a>
+        <a href="#about" class=" text-xl font-medium px-3 py-2 bg-white rounded-md block mt-2"><i class="fa-regular fa-user  me-2"></i>About </a>
+        <a href="#resume" class="text-xl font-medium  px-3 py-2 bg-white rounded-md block "><i class="fa-solid fa-file-lines  me-2"></i>Resum</a>
+        <a href="#works" class=" text-xl font-medium px-3 py-2 bg-white rounded-md block"><i class="fa-solid fa-briefcase  me-2"></i>Works</a>  
+        <a href="#contact" class=" text-xl  font-medium px-3 py-2 bg-white rounded-md block"><i class="fa-solid fa-address-book  me-2"></i>Contact</a>
+    </div> 
+    
+
+    </div>
+
+
+</div>
+  
+</nav>
+
+  <!-- home -->
+  
+  <div class="   absolute top-1/4 left-0 right-0 ">
+       
+       <div class="prof-contain container flex  w-9/12  mx-auto grid-cols-3  gap-9 items-center">
+        <div class="prof  animate__animated  animate__fadeInLeft animate__slower  animate__delay-2s ">
+            <h2 class=" mb-5 text-xl md:text-2xl lg:text-3xl text-pink-600 " > Hi I'm <a href="#"> Engi Magdi Sarhan</a></h4>
+            <span  class="  text-md  md:text-xl lg:text-2xl text-pink-900 "> Front End Devolper </span>
+            <p  class="mt-5 text-md lg:text-xl text-white-900 ">I graduated from faculty of Engineering <br>department of Systems and computer. <br> I'm learning Front end developement</p>
+            <button class="mt-2 lg:mt-5 py-1 px-2 lg:py-3  lg:px-5 rounded-xl  hover:mt-3"> <a href="#" class=" text-md lg:text-2xl  text-white"> Download CV</a></button>
+           
+
+        </div>
+        <!-- prof-img -->
+        <div class=" prof-img text-center  m-auto rounded-full animate__animated  animate__fadeInUp animate__slower "></div>
+ 
+        <!--  social link -->
+ 
+        <ul class="mt-3 absolute right-0  block animate__animated  animate__fadeInRight animate__slower animate__delay-3s">
+            <li  class="facbook p-2 text-xl hover:text-2xl"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li  class="twitter p-2 text-xl hover:text-2xl"><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+            <li  class="inst p-2 text-xl hover:text-2xl"><a href="#" ><i class="fa-brands fa-instagram"></i></a></li>
+            <li  class="linkedin p-2 text-xl hover:text-2xl"><a href="#" ><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+
+       </div>
+    </div>
+    </header>
+
+    <!--  about-->
+    <section id="about" >
+        <div class="container about-contain bg-white w-9/12 m-auto mt-24 ">
+            <h2 class=" mb-9 text-3xl text-pink-900">A bout Me</h2>
+            <div class="about-info flex  grid grid-cols-1 lg:grid-cols-2">
+                <div class="img ">
+                    <img src="img/WhatsApp Image 2024-02-01 at 9.59.42 PM.jpeg" alt="personal-img" srcset="" class="rounded-xl " >
+                </div>
+                <div class="info w-3/4  mt-9 lg:mt-0">
+                    <h3 class=" text-2xl text-pink-600 ">Who Am I?</h3>
+                    <p class="mt-5 text-xl">I graduated from faculty of Engineering department of Systems and computer.  I'm learning Front end developement I'm from Egypt. I studied at ALAzhar University
+                      <br>I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                    </p>
+                    <h3 class=" text-2xl mt-5  text-pink-600 ">Personal Info</h3>
+                    <div class="flex grid grid-cols-1 lg:grid-cols-2  justify-start lg:justify-center">
+                        <!-- phon -->
+                        <div class="flex  text-lg mt-2 lg:mt-5 "> <i class="fa-solid fa-mobile-screen me-2  text-rose-500 bg-white p-2 rounded-md transition duration-150 hover:bg-pink-500 hover:text-white "  ></i> <p>01021370938</p></div>
+                        <!-- email -->
+                        <div class="flex  text-md mt-5"> <i class="fa-solid fa-envelope-open-text me-2  text-cyan-700 bg-white p-2 rounded-md transition duration-150 hover:bg-cyan-500 hover:text-white  "></i> <p> <a href="mailto:engimagdisarhan2604@gmail.com"> engimagdisarhan2604@gmail.com</a></p></div>
+                        <!--location  -->
+                        <div class="flex  text-lg mt-5 "> <i class="fa-solid fa-location-dot me-2 text-rose-500  bg-white p-2 rounded-md transition duration-150 hover:bg-pink-500 hover:text-white "></i> <p>El Sharqia,Egypt</p></div>
+                        <!-- birthday -->
+                        <div class="flex  text-lg mt-5"> <i class="fa-regular fa-calendar-days me-2 text-cyan-700  bg-white p-2 rounded-md transition duration-150 hover:bg-cyan-500 hover:text-white"></i> <p>April 26, 1998</p></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- what i do -->
+            <h2 class="  mt-20 mb-9 text-3xl text-pink-900">What I Do!</h2>
+            <div class="skill flex gap-3  grid grid-cols-1 lg:grid-cols-3">
+                
+                <!-- ui/ux -->
+                <div class=" flex bg-rose-200 px-5 py-7 rounded-xl grid grid-cols-1 lg:grid-cols-2">
+                    <div class="m-auto lg:mt-0 lg:ms-2" >
+                        <img src="img/ui-uxdesign.svg" alt="" srcset="" width="65 "height="50" >
+                    </div>
+                    <div>
+                        <h4 class="text-2xl text-pink-800 mt-5 lg:mt-0 ">Ui/Ux Design</h4>
+                        <p class="text-lg ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+                    </div>
+                    
+                </div>
+                <!-- Web Development -->
+                <div class=" flex bg-cyan-200 px-5 py-7 rounded-xl grid grid-cols-1 lg:grid-cols-2">
+                    <div class="m-auto lg:mt-0 lg:ms-2" >
+                        <img src="img/webdev.svg" alt="" srcset="" width="65 "height="50" >
+                    </div>
+                    <div>
+                        <h4 class="text-2xl text-cyan-800 mt-5 lg:mt-0 ">Web Development</h4>
+                        <p class="text-lg ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+                    </div>
+                </div>
+            
+                <!--  Photography-->
+                <div class=" flex bg-rose-200 px-5 py-7 rounded-xl grid grid-cols-1 lg:grid-cols-2">
+                    <div class="m-auto lg:mt-0 lg:ms-2" >
+                        <img src="img/photograph.svg" alt="" srcset="" width="65 "height="50" >
+                    </div>
+                    <div>
+                        <h4 class="text-2xl text-rose-800 mt-5 lg:mt-0 ">Photography</h4>
+                        <p class="text-lg ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- resume -->
+    <section id="resume">
+        <div class="container resume-contain bg-white w-9/12 m-auto mt-24">
+            <h2 class=" mb-9 text-3xl text-pink-900">Resume</h2>
+            <div class= "flex gap-3 grid grid-cols-1 lg:grid-cols-3">
+                  <!-- education -->
+                  <div >
+                    <!-- icon&title -->
+                    <div class="flex gap-2">
+                        <img src="img/edu-icon-2.png" alt="" srcset="">
+                        <h4 class="text-2xl">Education</h4>
+                    </div >
+                    <!-- caption -->
+                    <div  style="height: 250px;" class="bg-rose-200 px-5 py-7 rounded-xl mt-5 ">
+                        <span class="text-lg text-gray-600"> 2019-2022</span>
+                        <h5 class="text-2xl text-rose-800 my-1">BS Engineering </h5>
+                        <span class=" text-xl text-gray-600" >computer& systems</span>
+                        <h6 class="text-2xl text-rose-900  my-1 ">Al ALAzhar University</h6> 
+                    </div>
+
+                </div>
+
+                <!-- Experience -->
+
+                <div>
+                    <!-- icon&title -->
+                    <div class="flex gap-2">
+                        <img src="img/exper-icon-2.png" alt="" srcset="">
+                        <h4 class="text-2xl"> Experience</h4>
+                    </div>
+                    <!-- caption -->
+                    <div style="height: 250px;" class="bg-cyan-200 px-5 py-7 rounded-xl mt-5 ">
+                        <span class="text-lg text-gray-600"> 2023-now</span>
+                        <h5 class="text-2xl text-cyan-900 my-2"> Web Developer </h5>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Awards -->
+                <div>
+                    <!-- icon&title -->
+                    <div class="flex gap-2">
+                        <img src="img/Awards-icon.png" alt="" srcset="">
+                        <h4 class="text-2xl">Awards </h4>
+                    </div>
+                    <!-- caption -->
+                    <div style="height: 250px;" class="bg-rose-200 px-5 py-7 rounded-xl mt-5 ">
+                        <span class="text-lg text-gray-600"> 07 Feb-2023</span>
+                        <h5 class="text-2xl text-rose-800 my-1">Introduction to HTML </h5>
+                        <span class="text-lg text-gray-600"> 01 Feb-2023</span>
+                        <h5 class="text-2xl text-rose-800 my-1">Introduction to CSS </h5>
+                        <span class="text-lg text-gray-600"> 05 Feb-2024</span>
+                        <h5 class="text-2xl text-rose-800 my-1">Git & GitHub  </h5>
+                       
+                    </div>
+
+                </div>
+              
+                
+                
+               
+            </div>
+
+
+
+            <!-- ******************** -->
+            <div class="bg-gray-300 mt-7 flex gap-9 px-5 py-7 rounded-xl grid grid-cols-1 lg:grid-cols-2 ">
+                <!-- skills -->
+                <div>
+                    <h2 class=" mb-9 text-3xl text-pink-900">Working Skills</h2>
+     
+                    <!--  Ui/Ux Design-->
+                    <div class="flex justify-between items-center gap-9 pt-5">
+                        <h4>Ui/Ux Design</h4>
+                        <span >55%</span>
+                    </div>
+                    <!-- progress -->
+                    <div class=" mt-2 h-1 bg-gray-600 w-full"> <div class="h-full bg-pink-700 " style="width: 55%;"> </div></div>
+
+
+                     <!--  Web Design-->
+                     <div class="flex justify-between items-center gap-9 pt-5">
+                        <h4>Web Design</h4>
+                        <span >70%</span>
+                    </div>
+                    <!-- progress -->
+                    <div class=" mt-2 h-1 bg-gray-600 w-full"> <div class="h-full bg-cyan-700 " style="width: 70%;"> </div></div>
+
+  
+                    <!--  Photoshop-->
+                    <div class="flex justify-between items-center gap-9 pt-5">
+                        <h4>Photoshop</h4>
+                        <span >75%</span>
+                    </div>
+                    <!-- progress -->
+                    <div class=" mt-2 h-1 bg-gray-600 w-full"> <div class="h-full bg-pink-700 " style="width: 75%;"> </div></div>
+
+
+                </div>
+
+
+                <!-- Knowledges -->
+                <div>
+                    <h2 class=" mb-9 text-3xl text-pink-900">Knowledges</h2>
+                    <div class="flex gap-3 grid grid-cols-3">
+                        <h6 class="bg-pink-300 p-2 me-2 rounded-md text-md text-pink-900" >Marketing</h6>
+                        <h6 class="bg-cyan-300 p-2 me-2 rounded-md text-md  text-cyan-900 " >Communication</h6>
+                        <h6 class="bg-pink-300 p-2 me-2 rounded-md text-md  text-pink-900" >Social Media</h6>
+                        <h6 class="bg-cyan-300 p-2 me-2 rounded-md text-md  text-cyan-900 " >Time Management</h6>
+                        <h6 class="bg-pink-300 p-2 me-2 rounded-md text-md  text-pink-900" >Flexibility </h6>
+                    </div>
+                </div>
+          
+            </div>
+        </div>
+    </section>
+
+    <!--  works-->
+    <section id="works">
+        <div class="container works-contain bg-white w-9/12 m-auto mt-24  ">
+            <h2 class=" mb-9 text-3xl text-pink-900">Portfolio</h2>
+        
+            <div class="works-content gap-5 flex grid grid-cols-1 md:grid-cols-3 mt-8">
+            
+                <!-- resturant -->
+                <div class="works-child ">
+                    <div class="img-card overflow-hidden rounded-lg"><a href="https://engimagdi.github.io/Delici-Restaurant/" target="_blank"><img src="img/bg.jpg" alt="" width="100%" height="100%" class="rounded-lg"></a></div>
+                    <!-- caption  -->
+                    <div class="img-caption py-2 px-2 mt-2 text-center ">
+                        <h3  class="text-pink-700 text-2xl"> <a href="https://engimagdi.github.io/Delici-Restaurant/" target="_blank"> Delici-Restaurant</a></h3>
+                    </div>
+                </div>
+
+                <!-- simone -->
+                <div class="works-child ">
+                    <div class="img-card overflow-hidden rounded-lg"><a href="https://engimagdi.github.io/Simple-Assigment/" target="_blank"><img src="img/profile.jpg" alt="" width="100%" height="100%" class="rounded-lg"></a></div>
+                    <!-- caption  -->
+                    <div class="img-caption py-2 px-2 mt-2 text-center ">
+                        <h3  class="text-pink-700 text-2xl"> <a href="https://engimagdi.github.io/Simple-Assigment/" target="_blank">Simple-Assigment</a></h3>
+                    </div>
+                </div>
+
+                <!--  -->
+                <!-- simone -->
+                <div class="works-child ">
+                    <div class="img-card overflow-hidden rounded-lg"><a href="https://engimagdi.github.io/ITSULU/" target="_blank"><img src="img/home.jpg" alt="" width="100%" height="100%" class="rounded-lg"></a></div>
+                    <!-- caption  -->
+                    <div class="img-caption py-2 px-2 mt-2 text-center ">
+                        <h3  class="text-pink-700 text-2xl"> <a href="https://engimagdi.github.io/ITSULU/" target="_blank">ITSULU-Assigment</a></h3>
+                    </div>
+                </div>
+
+          
+        
+        </div>
+
+
+        </div>
+
+    </section>
+    <!-- contact -->
+    <section id="contact ">
+        <div class="container contact-contain bg-white w-9/12 m-auto mt-24 mb-20 ">
+            <h2 class=" mb-9 text-3xl text-pink-900">Contact</h2>
+            <div class="contact-info flex  grid grid-cols-1 lg:grid-cols-2 gap-9">
+                <div class="left">
+                     <!-- phone -->
+                     <div class=" bg-rose-200 rounded-xl px-2 py-3 flex gap-9">
+                        <div><img src="img/phone-call.png" alt="" srcset="" width="30" height="30"></div>
+                        <div ><p class="text-xl mb-3">Phone:</p><p>01021370938</p></div>
+                    </div>
+                
+                    <!-- email -->
+                     <div class="left bg-rose-200 rounded-xl px-2 py-3 flex gap-9 mt-7">
+                        <div><img src="img/email-icon.webp" alt="" srcset="" width="30" height="30"></div>
+                        <div ><p class="text-xl mb-3">Email:</p><p> <a href="mailto:engimagdisarhan2604@gmail.com">engimagdisarhan2604@gmail.com</a></p></div>
+                    </div>
+                    <!-- adress -->
+                    <div class="left bg-rose-200 rounded-xl px-2 py-3 flex gap-9 mt-7">
+                        <div><img src="img/map-icon.png" alt="" srcset="" width="30" height="30"></div>
+                        <div ><p class="text-xl mb-3">Adress:</p>Dyarb-Negm El SHarqia</p></div>
+                    </div>
+
+                
+                </div>
+
+                <div class="right bg-gray-300 rounded-xl px-5 py-3">
+                    <h3 class="mt-5 text-2xl text-gray-500">I'm Always Open To Discussing Product</h3>
+                    <h4 class="mt-2 text-2xl text-gray-700">design work or partnerships.</h4>
+                    <form action="" class="p-4">
+                        <label class="block text-meduim text-gray-600 mt-5" for="name">Name <span class="text-gray-500">*</span> </label>
+                        <input class=" bg-gray-300  border border-gray-400 border-x-0 border-t-0 w-full   mt-2"  id="name" type="text"required>
+
+                        <label class="block text-meduim text-gray-600 mt-5" for="email">Email <span class="text-gray-500">*</span> </label>
+                        <input class=" bg-gray-300  border border-gray-400 border-x-0 border-t-0 w-full   mt-2"  id="email" type="email"required>
+
+                        <label class="block text-meduim text-gray-600 mt-5" for="msg">Message <span class="text-gray-500">*</span> </label>
+                        <textarea class=" bg-gray-300  border border-gray-400 border-x-0 border-t-0 w-full   mt-2"  id="msg" type="text"required  rows="2" cols="10"></textarea>
+      
+                    </form>
+                    <button  class='bg-gray-300  border border-gray-400 px-5 py-2 rounded-xl'type="submit" > submit</button>
+
+                </div>
+               
+               
+               
+            </div>
+            
+        </div>
+    </section>
+</body>
